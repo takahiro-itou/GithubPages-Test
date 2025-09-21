@@ -8,7 +8,10 @@ layout: default
   {% for post in site.posts %}
     <li>
       <span>{{ post.date | date: date_format }}</span>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <a href="/GithubPages-Test{{ post.url }}">{{ post.title }}</a>
       <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+      <a href="/GithubPages-Test/{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
